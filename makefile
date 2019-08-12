@@ -1,7 +1,7 @@
 OK_COLOR = \033[0;32m
 
 a.out:
-	@g++ -o $@ main.cc -lncurses -w
+	@g++ -o $@ main.cc -lmenu -lncurses -w
 	@printf "%b" "$(OK_COLOR)compil success\n"
 
 clean:
